@@ -1,0 +1,275 @@
+body{
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  background-color: black;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  color: whitesmoke;
+  font-style: normal;
+  overflow: hidden;
+}
+
+.main{
+    display: flex;
+    height: 100vh;
+    padding: 0.5rem;
+
+}
+a{
+    color: gray;
+    text-decoration: none;
+    margin-left: 6px;
+}
+.nav-search{
+    background-color:  #1c1c1c;
+    border-radius: 24px; 
+    padding-left: 10px;
+    width: 500px;
+    height: 30px;
+    padding-top: 10px;
+    color: gray;
+    font-size: 1rem;
+    opacity: 0.7;
+    margin-right: 100px;
+
+}
+.nav-search i{
+    font-size: 1.25rem;
+}
+.nav-home{
+    display: flex;
+    background-color: #1c1c1c;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    opacity: 0.7;
+}
+.nav-home:hover{
+    opacity: 1;
+}
+.nav-search:hover{
+    opacity: 1;
+    transform: scale();
+}
+
+.nav-home i{
+    font-size: 1.25rem;
+}
+
+
+.header{
+    display: flex;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    justify-content: right;
+    z-index: 10;
+
+}
+.sidebar{
+    margin-right: 0.5rem;
+    background-color: #121212;
+    color: white;
+    width: 340px;
+    border-radius: 1rem /*16px;*/
+
+}
+.main-content{
+    background-color: #1c1c1c;
+    flex: 1;
+    border-radius: 1rem;
+    overflow: auto;
+    padding: 3rem 1.5rem 0rem 1.5rem;
+}
+
+.music-player{
+    background-color: rgb(0, 3, 3);
+    position: fixed;
+    width: 100%;
+    height: 72px;
+    bottom: 0px;
+}
+
+.sidebar h4{
+    margin-top: 62px;
+    margin-left: 5px;
+    display: inline-block;
+}
+
+.library{
+    height: 100px;
+    display: flex;
+}
+.create{
+    padding-left: 8rem;
+    padding-top:65px;
+    font-size: larger;
+    border-radius: 24px;
+    /* background-color: #1c1c1c; */
+    height: 30px;
+    width: 50px;
+    display: flex;
+    justify-items: right;
+}
+.library i{
+    display: flex;
+    height: 100%;
+    opacity: 0.7;
+    
+}
+.library img{
+    height: 1.15rem;
+    width: 1.15rem;
+    margin-left: 10px;
+    margin-top: 60px;
+    margin-right: 10px;
+}
+.library:hover{
+    opacity: 1;
+}
+
+.box{
+    height: 8rem;
+    background-color: #232323;
+    border-radius: 0.75rem;
+    margin: 0.75rem 0.7rem 1.25rem 0;
+    padding: 0.75rem 1rem;
+
+}
+.box-p1{
+    font-size: 1rem;
+    font-weight: 700;
+}
+.box-p2{
+    font-size: 0.85rem;
+    opacity: 0.9;
+}
+
+.badge{
+    background-color: white;
+    border: none;
+    border-radius: 100px;
+    padding: 0.25rem 1rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
+    height: 2rem;
+    width: fit-content ;
+
+}
+.nav-options{
+    margin-right: 1.2rem;
+}
+.nav-options div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+}
+.dark-badge{
+    background-color:#232323;
+    color: white;
+    border: none;
+    border-radius: 100px;
+    padding: 0.25rem 1rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
+    height: 2rem;
+    width: fit-content ;
+}
+
+@media (max-width:1000px){
+    .nav-options{
+        display: hide;
+    }
+}
+
+.left-group{
+    display: flex;
+    gap: 10px;
+    margin-right: 500px;
+}
+
+.card{
+    background-color: #232323;
+    width: 200px;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+
+}
+.card-container{
+    display:flex;
+    flex-wrap: wrap;
+
+}
+.card-image{
+    width:100%;
+    border-radius:0.5rem;
+}
+.card-title{
+    font-weight: 600;
+}
+.card-info{
+    font-size: 0.85rem;
+    opacity:0.6;
+}
+
+.footer{
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.line{
+    width: 90%;
+    height: 50%;
+    border-top: 1px solid white;
+    opacity: 0.4;
+}
+
+.music-player{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.album{
+    width: 25%;
+}
+.player{
+    width: 50%;
+}
+.controls{
+    width: 25%;
+}
+.player-control-icon{
+    height: 1rem;
+    opacity: 0.7;
+    margin-right: 1.7rem;
+}
+.player-controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.player-control-icon:hover{
+    opacity: 1;
+}
+.playback-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress-bar{
+    width: 70%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+}
